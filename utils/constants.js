@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://localhost:3000/'; //production
+export const BASE_URL = 'https://backend-bsale-julius.herokuapp.com/'; //production
