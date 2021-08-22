@@ -1,0 +1,44 @@
+#list-categories li{
+    padding: 10px 10px!important;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+}
+#list-categories li a{
+    text-decoration: none!important;
+    color: #000;
+}
+#list-categories li a.active,#list-categories li a.active .icon-list-category{
+    color: #ff6815;
+}
+.icon-list-category{
+    font-size: 12px;
+    color: #000;
+    float: right;
+}
+nav{
+    background-color: #ff6815;
+    color: #ffffff;
+}
+nav a,nav a:hover {
+    color: #ffffff;
+    font-size: 30px!important;
+}
+#list-products i.fas.fa-shopping-cart{
+    font-size: 13px!important;
+    color: #ffffff;
+}
+#list-products .shopping-button{
+    background-color: #ff6815;
+}
+#list-products .card-title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.page-link{
+    color: #ff6815;
+}
+.page-item.active .page-link{
+    background-color: #ff6815;
+    border-color: #ff6815;
+}
