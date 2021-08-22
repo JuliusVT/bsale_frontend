@@ -48,12 +48,13 @@ const generateListProduct = (data) =>{
         data.map((item) => {
         element.innerHTML   +=  `<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
                                     <div class="card">
-                                        <img style="min-height:304px;height:304px;" src="${item.url_image ? item.url_image:'assets/productdefault.jpg'}" class="card-img-top img-fluid" alt="${item.url_image ? item.url_image:'productdefault.jpg'}">
+                                        <img src="${item.url_image ? item.url_image:'assets/productdefault.jpg'}" class="card-img-top img-fluid" alt="${item.url_image ? item.url_image:'productdefault.jpg'}">
                                         <div class="card-body">
                                             <h5 class="card-title" title="${item.name}">${item.name}</h5>
                                             <div class="row row align-items-center">
                                                 <div class="col-md-6">
-                                                <p class="card-text">${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.price)}</p>
+                                                ${item.discount > 0 ? `<p class="card-text mb-0">Descuento: ${item.discount}%</p>`:''}
+                                                <p class="card-text">Precio: ${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.price)}</p>
                                                 </div>
                                                 <div class="col-md-6 text-end">
                                                 <a href="#" class="btn shopping-button rounded-pill"><i class="fas fa-shopping-cart"></i></a>

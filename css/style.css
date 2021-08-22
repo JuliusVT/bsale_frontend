@@ -35,10 +35,22 @@ nav a,nav a:hover {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+#list-products img{
+    min-height:304px;
+    height:304px;
+}
+#list-products .card{
+    min-height: 418px;
+}
 .page-link{
     color: #ff6815;
 }
 .page-item.active .page-link{
     background-color: #ff6815;
     border-color: #ff6815;
+}
+footer{
+    background-color: #ff6815;
+    color: #ffffff;
+    width: 100%;
 }
